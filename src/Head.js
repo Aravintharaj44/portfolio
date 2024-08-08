@@ -21,7 +21,7 @@ function Head() {
   return (
     <>
       <section className='nav-sec'>
-        <Navbar expand={false} className="navbar-expand-lg nav-bg sticky-top">
+        <Navbar expand={false} className="navbar-expand-lg nav-bg fixed-top bg-white ">
           <Container>
             <Navbar.Brand href="#" className="brand-custom">Aravintharaj</Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -102,36 +102,101 @@ function Head() {
       </section>
       <section id='skills_sec' className='skills_sec'>
         <Container>
+          <div className='row mb-3'>
+            <div className='text-center'>
+              <p className='common_head'>SKILLS</p>
+            </div>
+          </div>
           <div className='row'>
-            <div className="col-lg-2 mb-3">
-              <div className='skill_div'><img src={skill1} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+              {/* <div className='skill_div'><img src={skill1} alt="img" className='skill_img' /></div> */}
+              <div class="card border-0 skill_div">
+              <img src={skill1} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">HTML</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill2} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill2} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill2} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">CSS</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill3} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill3} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill3} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">PHP</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill4} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill4} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill4} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">LARAVEL</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill5} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill5} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill5} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">GIT LAB</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill6} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill6} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill6} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">GIT HUB</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill7} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill7} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill7} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">REACT JS</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill8} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill8} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill8} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">FIERBASE</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill9} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill9} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill9} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">JAVA SCRIPT</h5>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-2 mb-3">
-            <div className='skill_div'><img src={skill10} alt="img" className='skill_img' /></div>
+            <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-5">
+            {/* <div className='skill_div'><img src={skill10} alt="img" className='skill_img' /></div> */}
+            <div class="card border-0 skill_div">
+              <img src={skill10} alt="img" className='skill_img' />
+                <div class="card-body">
+                  <h5 class="card-title text-center">MYSQL</h5>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
