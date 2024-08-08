@@ -1,10 +1,20 @@
-import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import banner_img from './img/profile-image.svg';
+import about_img from './img/about_img.svg';
+import skill1 from './img/skill1.svg';
+import skill2 from './img/skill2.svg';
+import skill3 from './img/skill3.svg';
+import skill4 from './img/skill4.svg';
+import skill5 from './img/skill5.svg';
+import skill6 from './img/skill6.svg';
+import skill7 from './img/skill7.svg';
+import skill8 from './img/skill8.svg';
+import skill9 from './img/skill9.svg';
+import skill10 from './img/skill10.svg';
 import './style.css';
 
 function Head() {
@@ -74,10 +84,57 @@ function Head() {
 
       {/* Other sections */}
       <section id='about_sec' className='about_sec'>
-        {/* Content for About section */}
+        <Container>
+          <div className='row'>
+            <div className='col-lg-6 col-md-6 col-sm-12'>
+              <div className='about_heading_div' >
+                <p className='about_heading'>I love being a <span className='d-block'>developer !</span></p>
+                <p className='about_content'>I am Aravintharaj B.E (ECE), a dedicated UI and Laravel Developer with a strong interest in web development.I have gained skills in both frontend technologies and backend frameworks. Currently, I am working in this field, which motivates me to keep learning and staying updated with the latest trends. I am known for learning quickly and have completed several projects, showing my ability to deliver high-quality work. My skills in UI design and Laravel development help me handle different parts of web development effectively.</p>
+              </div>
+            </div>
+            <div className='col-lg-6 col-md-6 col-sm-12 order-md-1 order-first'>
+              <div className='about_img_div text-center'>
+                <img src={about_img} alt='about-img' className='about_img img-responsive' />
+              </div>
+            </div>            
+          </div>
+        </Container>
       </section>
       <section id='skills_sec' className='skills_sec'>
-        {/* Content for Skills section */}
+        <Container>
+          <div className='row'>
+            <div className="col-lg-2 mb-3">
+              <div className='skill_div'><img src={skill1} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill2} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill3} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill4} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill5} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill6} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill7} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill8} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill9} alt="img" className='skill_img' /></div>
+            </div>
+            <div className="col-lg-2 mb-3">
+            <div className='skill_div'><img src={skill10} alt="img" className='skill_img' /></div>
+            </div>
+          </div>
+        </Container>
       </section>
       <section id='projects_sec' className='projects_sec'>
         {/* Content for Projects section */}
