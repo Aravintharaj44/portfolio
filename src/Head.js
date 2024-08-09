@@ -15,13 +15,18 @@ import skill7 from './img/skill7.svg';
 import skill8 from './img/skill8.svg';
 import skill9 from './img/skill9.svg';
 import skill10 from './img/skill10.svg';
+import contact from './img/contact.svg';
+import fb from './img/fb.png';
+import insat from './img/insta.png';
+import linked from './img/linedin.png';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Head() {
   return (
     <>
       <section className='nav-sec'>
-        <Navbar expand={false} className="navbar-expand-lg nav-bg fixed-top bg-white ">
+        <Navbar expand={false} className="navbar-expand-lg nav-bg  fixed-top">
           <Container>
             <Navbar.Brand href="#" className="brand-custom">Aravintharaj</Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -36,18 +41,18 @@ function Head() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-center flex-grow-1 nav-div">
+                <Nav className="justify-content-end flex-grow-1 nav-div">
                   <Nav.Link>
-                    <ScrollLink to="home_sec" smooth={true} duration={500}>Home</ScrollLink>
+                    <ScrollLink to="home_sec" smooth={true} duration={.5}>Home</ScrollLink>
                   </Nav.Link>
                   <Nav.Link>
-                    <ScrollLink to="about_sec" smooth={true} duration={500}>About</ScrollLink>
+                    <ScrollLink to="about_sec" smooth={true} duration={.5}>About</ScrollLink>
                   </Nav.Link>
                   <Nav.Link>
-                    <ScrollLink to="skills_sec" smooth={true} duration={500}>Skills</ScrollLink>
+                    <ScrollLink to="skills_sec" smooth={true} duration={.5}>Skills</ScrollLink>
                   </Nav.Link>
                   <Nav.Link>
-                    <ScrollLink to="projects_sec" smooth={true} duration={500}>Projects</ScrollLink>
+                    <ScrollLink to="projects_sec" smooth={true} duration={.5}>Projects</ScrollLink>
                   </Nav.Link>
                   <Nav.Link>
                     <ScrollLink to="contact_sec" smooth={true} duration={500}>Contact</ScrollLink>
@@ -75,7 +80,7 @@ function Head() {
                 </p>
               </div>
               <div className='text-center mt-5'>
-              <ScrollLink to="contact_sec" className='contact_btn' smooth={true} duration={500}>Contact</ScrollLink>
+              <ScrollLink to="contact_sec" className='contact_btn' smooth={true} duration={.5}>Contact</ScrollLink>
               </div>
             </div>
           </div>
@@ -206,6 +211,26 @@ function Head() {
       </section>
       <section id='contact_sec' className='contact_sec'>
         {/* Content for Contact section */}
+        <Container>
+          <div className='row'>
+            <div className='col-lg-6 col-md-6'>
+              <div><p className='contact_head'>-Get in Touch</p></div>
+              <div><p className='contact_head1'>Let's create progress together</p></div>
+              <div><p className='contact_txt'>For all inquiries, you can contact and message me on any of the specified social medias below.</p></div>
+              <div className='social_media'>
+              {/* <Link to='/facebook-page'>
+                <img src={fb} alt='Facebook' />
+              </Link> */}
+                <a href='https://www.facebook.com' target='_blank'><img src={fb} alt='fb'/></a>
+                <a href='https://www.instagram.com' target='_blank'><img src={insat} alt='insta'/></a>
+                <a href='https://www.linkedin.com' target='_blank'><img src={linked} alt='link'/></a>
+              </div>
+            </div>
+            <div className='col-lg-6 col-md-6'>
+              <div className='text-center'><img src={contact} alt='contact' className='contact_img' /></div>
+            </div>
+          </div>
+        </Container>
       </section>
     </>
   );
