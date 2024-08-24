@@ -20,7 +20,6 @@ import fb from './img/fb.png';
 import insat from './img/insta.png';
 import linked from './img/linedin.png';
 import './style.css';
-import { Link } from 'react-router-dom';
 
 function Head() {
   return (
@@ -221,9 +220,9 @@ function Head() {
               {/* <Link to='/facebook-page'>
                 <img src={fb} alt='Facebook' />
               </Link> */}
-                <a href='https://www.facebook.com' target='_blank'><img src={fb} alt='fb'/></a>
-                <a href='https://www.instagram.com' target='_blank'><img src={insat} alt='insta'/></a>
-                <a href='https://www.linkedin.com' target='_blank'><img src={linked} alt='link'/></a>
+                <a href='https://www.facebook.com' target='_blank' rel="noopener noreferrer"><img src={fb} alt='fb'/></a>
+                <a href='https://www.instagram.com' target='_blank' rel="noopener noreferrer"><img src={insat} alt='insta'/></a>
+                <a href='https://www.linkedin.com' target='_blank' rel="noopener noreferrer"><img src={linked} alt='link'/></a>
               </div>
             </div>
             <div className='col-lg-6 col-md-6'>
