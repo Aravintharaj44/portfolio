@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ce4348dc.css",
-    "main.js": "/portfolio/static/js/main.0a3debe4.js",
+    "main.css": "/portfolio/static/css/main.6a388931.css",
+    "main.js": "/portfolio/static/js/main.b8a3e62e.js",
     "static/js/453.33e41a6a.chunk.js": "/portfolio/static/js/453.33e41a6a.chunk.js",
+    "static/media/p1.jpg": "/portfolio/static/media/p1.6d00e9de6bc1a3b2c895.jpg",
+    "static/media/p2.jpg": "/portfolio/static/media/p2.f240faf52c2002ff621e.jpg",
+    "static/media/p3.jpg": "/portfolio/static/media/p3.a2bf9061358e8e8e4f2c.jpg",
     "static/media/about_img.svg": "/portfolio/static/media/about_img.7c7b3cb0898c51dbc3d1a891684afbfb.svg",
     "static/media/contact.svg": "/portfolio/static/media/contact.5bbf6718d64832602b278cfe69ce5c4d.svg",
     "static/media/profile-image.svg": "/portfolio/static/media/profile-image.92a693423f8c6167d7abdb47b72fe418.svg",
@@ -17,12 +20,12 @@
     "static/media/skill9.svg": "/portfolio/static/media/skill9.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
     "static/media/skill1.svg": "/portfolio/static/media/skill1.0107c93943a8f415b5db64ebb0a9d12d.svg",
     "static/media/skill5.svg": "/portfolio/static/media/skill5.6305c19f03ca760a3f9ce1886dd68c3f.svg",
-    "main.ce4348dc.css.map": "/portfolio/static/css/main.ce4348dc.css.map",
-    "main.0a3debe4.js.map": "/portfolio/static/js/main.0a3debe4.js.map",
+    "main.6a388931.css.map": "/portfolio/static/css/main.6a388931.css.map",
+    "main.b8a3e62e.js.map": "/portfolio/static/js/main.b8a3e62e.js.map",
     "453.33e41a6a.chunk.js.map": "/portfolio/static/js/453.33e41a6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce4348dc.css",
-    "static/js/main.0a3debe4.js"
+    "static/css/main.6a388931.css",
+    "static/js/main.b8a3e62e.js"
   ]
 }
