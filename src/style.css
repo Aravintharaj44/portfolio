@@ -17,7 +17,6 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: "IBM Plex Sans", sans-serif;
-    /* background-color: var(--theme_black); */
 }
 .navbar .brand-custom {
     font-size: 25px;
@@ -353,4 +352,49 @@ color: var(--color-secondary);
     .contact_sec{
         padding: 50px 0% 0% 0%;
     }
+}
+/* project sec */
+.projects_sec{
+    background-image:linear-gradient(315deg,#ffffff 0%,#d7e1ec 74%);
+    padding: 50px 0%;
+    padding-top: 100px;
+}
+.project_img{
+    /* width: 200px; */
+    max-width: 100%;
+    height: 200px;
+}
+.project_des{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+.projects_sec .row,.projects_sec .row .card{
+    height: 100%;
+}
+.project_heading{
+    font-weight: 700;
+    color: var(--color-primary) !important;
+}
+
+.resume_btn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: var(--color-secondary);
+    height: 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.resume_link{
+    padding:40px;
+    text-decoration: none;
+    color: var(--theme_black);
+    font-size: 18px;
+    font-weight: 700;
 }

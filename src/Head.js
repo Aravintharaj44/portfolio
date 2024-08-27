@@ -1,3 +1,5 @@
+
+import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -16,6 +18,9 @@ import skill8 from './img/skill8.svg';
 import skill9 from './img/skill9.svg';
 import skill10 from './img/skill10.svg';
 import contact from './img/contact.svg';
+import project1 from './img/p1.jpg';
+import project2 from './img/p2.jpg';
+import project3 from './img/p3.jpg';
 import fb from './img/fb.png';
 import insat from './img/insta.png';
 import linked from './img/linedin.png';
@@ -206,7 +211,48 @@ function Head() {
         </Container>
       </section>
       <section id='projects_sec' className='projects_sec'>
-        {/* Content for Projects section */}
+        <Container>
+          <div className='row mb-3'>
+            <div className='text-center'>
+                <p className='common_head'>Projects</p>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
+              <div class="card border-0" >
+                <div className='text-center'>
+                  <img src={project1} class=" project_img card-img-top" alt="project" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 project_heading text-center">Door Lock Sysytem</h5>
+                  <p class="card-text project_des">TThe goal of this project is to create a safety door lock system using an Arduino microcontroller with a servo motor and keypad for secure access control to a door.</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
+              <div class="card border-0" >
+                <div className='text-center'>
+                  <img src={project2} class=" project_img card-img-top" alt="project" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 project_heading text-center">Employee Attrition Analytics</h5>
+                  <p class="card-text project_des">The objective of the Employee Attrition Analytics project is to analyze data to identify key factors influencing employee turnover, predict future attrition, and develop strategies to improve retention.</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
+              <div class="card border-0" >
+                <div className='text-center'>
+                  <img src={project3} class=" project_img card-img-top" alt="project" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 project_heading text-center">Hybrid Algorithm embed with secure data</h5>
+                  <p class="card-text project_des">The objective of the HAESD project is to develop a hybrid algorithm that ensures the secure and safe transfer of data, enhancing data protection and minimizing the risk of breaches.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
       </section>
       <section id='contact_sec' className='contact_sec'>
         {/* Content for Contact section */}
@@ -231,6 +277,9 @@ function Head() {
           </div>
         </Container>
       </section>
+      <div className='resume_btn'>
+         <Link to="\" className='resume_link'>Resume</Link>
+      </div>
     </>
   );
 }
